@@ -20,9 +20,9 @@ const AddProject = ({
           let cssClassses =
             "w-full text-left px-2 py-1 hover:rounded-[20px] my-1 text-slate-700 hover:bg-slate-700 hover:text-white";
           if (project.id === selectProjectId) {
-            cssClassses += "bg-slate-700 text-slate-200 ";
+            cssClassses += "bg-slate-700 text-slate-200 hover:text-slate-700/90 hover:text-slate-200";
           } else {
-            cssClassses += "text-slate-200";
+            cssClassses += "text-slate-200 hover:text-slate-200";
           }
           return (
             <li key={project.id}>
