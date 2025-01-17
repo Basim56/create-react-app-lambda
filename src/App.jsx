@@ -12,6 +12,9 @@ function App() {
   });
 
   function handleAddTask(text) {
+    if (text === "") {
+      return;
+    }
     setProjectsState((prevState) => {
       const taskId = Math.random();
       const newTask = {
